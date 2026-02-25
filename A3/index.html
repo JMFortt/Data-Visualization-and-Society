@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Julia Fortt</strong> — <em>JMFortt@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>Looking at this visualization, no information is immediately clear to me.</li>
+				<li>After looking at it for a minute, I have a better idea of what is being shown.</li>
+				<li>Looks like there's a significant peak around the beginning of 2021, and again in Jan. of 2022. Also between July and Oct of 2021? Seems like an odd time for there to be a peak.</li>
+				<li>If I understand correctly, going into 2022 had the largest number of new cases.</li>
+				<li>Not sure what the "7-day average" annotation is referring to. Length of infection?</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<p>
+				I think the visualization does a good job of showing a repeating cyclic pattern of cases year-to-year (peaks in Jan., troughs in June). The spiral shape lends itself well to that, I think. However, despite the form lending itself to that purpose, I think it could be made clearer with chronological captions to describe events on the timeline (since at this point, many of the major milestones in COVID have a good chance of being common knowledge). As it stands, there is only one caption included, and that particular one could be made clearer with additional details/context, since I as the reader am left to infer what it means.
+			</p>
+			<p>
+				Additionally, I think the visualization could be a little clearer in its overall design - my first thought when I saw this was "where do I look first?" My eye was initially drawn to the largest peak, which happens to be at the top center of the page, just next to the legend. This, however, is the end of the spiral timeline, not the beginning. Tangentially, the spiral ballooning and shrinking, although it makes sense logically, is surprisingly difficult to read (despite the scale given). I'm curious if spiralling bars would be clearer?
+
+			</p>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+      <figure>
+				<img src="../images/A3/concept_1.png" alt="Data Visualization" />
+				<figcaption>
+          			Sketch of a standard bar chart showing cases in 1-month bins from 2020 to 2022.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>I wanted to focus first on readability.</li>
+				<li>Simplistic artistically, and I feel like there should be a way to show impact here better (reducing people sick as part of a global pandemic to numbers isn't ideal).</li>
+				<li>I think this does make some of the trends clearer.</li>
+				<li>Probably ideal for an audience needing to predict peaks.</li>
+			</ul>
+
+			<figure>
+				<img src="../images/A3/concept_2.png" alt="Data Visualization" />
+				<figcaption>
+          			Sketch of a spiraling bar chart showing cases in 1-month bins from 2020 to 2022.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>Wanted to explore the spiral design again, but with some modifications.</li>
+				<li>I think this ended up easier to read than the original, but it's...not perfect.</li>
+				<li>Curious what this would look like polished + to scale with accurate captions...</li>
+			</ul>
+
+			<figure>
+				<img src="../images/A3/concept_3.png" alt="Data Visualization" />
+				<figcaption>
+          			Sketch of a horizontal stacked bar chart showing cases in 1-month bins. The years are stacked, and differentiated by color.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>I wanted to try and bridge the gap between readability and visual interest here.</li>
+				<li>Not as good for determining overall case numbers, but better at showing the change in numbers year-to-year.</li>
+				<li>Colors chosen are arbitrary. Maybe I could choose more deliberately?</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="../images/A3/final_vis.png" alt="Data Visualization" />
+				<figcaption>
+                    Horizontal stacked bar chart showing cases in 1-month bins. The years are stacked, and differentiated by color.
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Final Writeup</h2>
+
+			<p>
+				In my final visualization, I decided to focus on visualizing the year-to-year trends of new confirmed COVID cases. Specifically, I wanted to answer the question "when do COVID cases historically peak and fall?" To do so, I decided to divide the numbers among the 12 months, and use a stacked bar chart to emphasize aggregate trends across years. I made the chart horizontal for easier top-down scan of peaks and troughs, and used color to differentiate cases from year to year. While I didn't have a firm choice of color encodings in mind originally, I wanted to emphasize increasing "preparedness" as the years progressed (regardless of how the numbers played out), so I made 2020 (the first year of COVID) red, and the subsequent year yellow.
+      		</p>
+
+			<p>
+				I definitely think that my chosen visualization is easier to read and detect trends in than the original. While sadly not as artistic, I think it makes clear the yearly cyclic rise and fall of COVID cases, even without the cyclic visual format. It's certainly not perfect though, as a reader would have to work a bit to separate out each portion of the stacked bar chart, but for the message I was trying to communicate, I think it works well enough. The process of "critique by redesign" was certainly effective in clarifying the challenges of communicating data, and has left me curious what more I could do communication-wise with an interactive medium...
+      		</p>
+		</section>
+	</main>
+</body>
+</html>

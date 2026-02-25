@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Julia Fortt</strong> — <em>JMFortt@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Zoning and Housing Supply</h2>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<li>Are there significantly more single family homes in areas far from the MBTA?</li>
+				(Inspired by the large number of non-single family homes near public transit in my home state)
+				<li>How much of the greater Boston residential area is zoned for single family homes?</li>
+				(Inspired by observing few single family homes near the city center)
+				<li>Are there relatively even distributions of ages/income levels in the Boston area?</li>
+				(Inspired by housing demand discussions in previous class readings)
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img src="../images/A2/vis_1.png" alt="Data visualization"/>
+				<figcaption>
+				I wanted to start by getting a better idea of what information exists in the dataset. To do so, I started with a deep-dive of the metadata, and noticed that two major components were municipality info and demographic-related data. Wanting to take a closer look at the former, I was curious if there was any correlation between where single-family homes were and where MBTA stops were (since I assume those locations would generally be well-suited for more population-dense housing types). I was surprised to see that an overwhelming majority of single-family dominant areas were MBTA community marked. Interestingly, there were a number of municipalities with 0% single family zoning area. For clarity, those are removed from this visualization, but are futher explored in the next. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/A2/vis_2.png" alt="Data visualization"/>
+				<figcaption>
+				Next I was curious about the municipalities that had a low single-family zoning percentage. Thus I looked only at municipalities where that figure was 5% or lower, and checked to see whether these areas also were largely MBTA communities, as I expected. Interestingly, while my expectation was confirmed, Boston itself was marked as a non-MBTA community (which was very odd). That prompted some cursory internet searches that seemed to suggest that particular outlier was the result of some unrelated zoning law more so than practical observations/applications.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/A2/vis_3.png" alt="Data visualization"/>
+				<figcaption>
+				As a final confirmation of what felt like an overwhelmingly large percentage of MBTA communities among Boston municipalities, I created this graph to get a better idea of exactly how many Boston residents lived in MBTA communities. As shown, it's an overwhelming majority, especially considering the Boston-labeled exception described in the previous exerpt.
+				Ultimately this answered my first analysis question; there were not significantly more single family homes in areas far from the MBTA - there simply were very few homes far from the MBTA's reach.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/A2/vis_4.png" alt="Data visualization"/>
+				<figcaption>
+				Sufficiently convinced that access to public transportation was not a significant marker of single-family dominant areas (or the opposite), I then wanted to get a good idea of exactly how much of Boston's municipalities were zoned for single family homes. This heat map makes it clear that while it's not an overwhelming majority, there exist a fair number of single family homes in the greater Boston area. This answered my second analysis question quite succinctly.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/A2/vis_5.png" alt="Data visualization"/>
+				<figcaption>
+				Shifting then to my third question, I created a simple bar graph of income levels across the Boston area. I was surprised to see that there were a large number of very wealthy residents, which I suppose makes sense given housing prices I've seen in MA.
+				</figcaption>
+			</figure>
+		
+			<figure>
+				<img src="../images/A2/vis_6.png" alt="Data visualization"/>
+				<figcaption>
+				Finally, I took a look at the age spread across residents in the Boston area. I was expecting to see a large number of people between 18 and 64, just based on who I tend to see on the street, and that was largely confirmed by the data. From this I noted that any housing shortage wouldn't be very surprising, since the overwhelming majority of Boston residents are clearly within reasonable age of buying/looking for a home. It is interesting in combination with the results of the previous graph though.
+				</figcaption>
+			</figure>
+
+			<!-- <figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+				ENTER IMAGE CAPTION HERE.
+				</figcaption>
+			</figure> -->
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+			<p>In this exploratory data analysis we explore the population demographics and zoning distribution of different Boston-based municipalities in an attempt to better understand the complexities of Boston's zoning and housing supply.</p>
+
+			<p>We began by exploring the dataset, noting it's focus on population demographics and municipality zoning info. We then took a closer look at MBTA communities, and noted an unexpected exception due to zoning lows. After, we looked at the overall dominance of single family home zoning, and finally at general population data for residents in the Boston area.</p>
+
+			<p>Ultimately, we were able to create a clear picture of Boston's public transportation access, single-family residential zoning, and population demographics. In investigating our analysis questions, we discovered that an overwhelming majority of homes in the greater Boston area, single-family or not, are near the MBTA, making that an unlikely deciding factor with regards to residential zoning types. We were also able to see clearly that there are a fair number of existing single-family zones, despite inner Boston's high population density. Lastly, we were able to see that there exist both a large number of very wealthy residents, and residents between 18 and 64, which was a somewhat unexpected combination.</p>
+
+		</section>
+	</main>
+</body>
+</html>
